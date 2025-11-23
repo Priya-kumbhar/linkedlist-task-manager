@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+input {
+    padding: 12px;
+    width: 60%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #6366f1;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #818cf8;
+    transform: scale(1.05);
+}
+
+.node {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 10px;
+    background: #10b981;
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+    animation: fadeSlide 0.4s ease-out;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.node:hover {
+    transform: scale(1.1);
+    background: #34d399;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#listDisplay {
+    margin-top: 30px;
+    font-size: 20px;
+}
